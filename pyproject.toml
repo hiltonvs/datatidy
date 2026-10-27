@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hiltonvs-datatidy"
+version = "0.1.0"
+description = "检测缺失、重复、格式错误与异常值，按问题类型归组并给出占比"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "hiltonvs" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://hiltonvs.github.io"
+Repository = "https://github.com/hiltonvs/datatidy"
+Issues = "https://github.com/hiltonvs/datatidy/issues"
+
+[project.scripts]
+datatidy = "datatidy:main"
+
+[tool.setuptools]
+py-modules = ["datatidy"]
